@@ -2,51 +2,73 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>موقعي الشخصي</title>
+    <title>My Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            direction: rtl;
         }
-
         header {
-            background-color: #222;
+            background: #222;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
-
         section {
             padding: 20px;
+            background: white;
+            margin: 15px;
+            border-radius: 5px;
         }
-
+        h2 {
+            color: #333;
+        }
         .services {
             display: flex;
-            gap: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
         }
-
-        .box {
-            background: white;
+        .service {
+            flex: 1;
+            min-width: 150px;
+            background: #eee;
             padding: 15px;
-            border-radius: 5px;
-            width: 30%;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
             text-align: center;
-            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
         }
 
-        button {
-            padding: 10px 15px;
-            background-color: #007bff;
+        /* WhatsApp Button */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
             color: white;
-            border: none;
-            cursor: pointer;
+            padding: 15px 18px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .whatsapp:hover {
+            background: #1ebe5d;
+        }
+
+        /* English text */
+        .en {
+            direction: ltr;
+            color: #555;
+            margin-top: 10px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -55,39 +77,62 @@
 
 <header>
     <h1>مرحبا، أنا إسماعيل</h1>
-    <h1>hellow,i am ismail</h1>
-    <p>مصمم مواقع بسيطة</p>
-    <p>simple website designer</p>
+    <p>مطور مواقع مبتدئ – صفحات بسيطة وسريعة</p>
+    <div class="en">
+        <strong>Hello, I'm Ismail</strong><br>
+        Beginner Web Developer – Simple & Fast Websites
+    </div>
 </header>
 
 <section>
     <h2>من أنا؟</h2>
-    <h2>who am i?</h2>
-    <p>أنا مبتدئ في تطوير الويب، أقدّم مواقع تعريفية بسيطة وسريعة.</p>
-    <p>I am a beginner in web development, providing simple and fast landing pages.</p>
+    <p>
+        أنا مبتدئ في تطوير الويب، أقدم مواقع تعريفية وصفحات هبوط بسيطة وسريعة
+        مناسبة للأشخاص والمشاريع الصغيرة.
+    </p>
+    <div class="en">
+        I am a beginner web developer offering simple, clean, and fast
+        landing pages and personal websites for individuals and small businesses.
+    </div>
 </section>
 
 <section>
     <h2>خدماتي</h2>
-    <h2>My Services</h2>
     <div class="services">
-        <div class="box">موقع تعريفي</div>
-        <div class="box">CV Online</div>
-        <div class="box">Landing Page</div>
+        <div class="service">
+            موقع تعريفي<br>
+            <span class="en">Personal Website</span>
+        </div>
+        <div class="service">
+            CV Online<br>
+            <span class="en">Online Resume</span>
+        </div>
+        <div class="service">
+            Landing Page<br>
+            <span class="en">Landing Page</span>
+        </div>
     </div>
 </section>
 
 <section>
     <h2>تواصل معي</h2>
-    <h2>Contact Me</h2>
-    <p>Email: chtounismail602@email.com</p>
-    <button>اتصل بي</button>
-    <button>Contact Me</button>
+    <p>Email: chtounismail602@gmail.com</p>
+    <div class="en">
+        Feel free to contact me for collaboration or freelance work.
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 جميع الحقوق محفوظة</p>
+    © 2026 جميع الحقوق محفوظة<br>
+    <span class="en">All rights reserved</span>
 </footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp"
+   href="https://wa.me/212612345678?text=Hello%20I%20need%20a%20website"
+   target="_blank">
+💬
+</a>
 
 </body>
 </html>
